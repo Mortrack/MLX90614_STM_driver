@@ -18,9 +18,9 @@ MLX90614 Infra Red Thermometer Driver module at the provided offline documentati
 
 Last but not least, the configurations and details of the microcontroller used for testing and validating this library
 can be reviewed at the
-<a href=#>STM32CubeMX_configurations_report.pdf</a>
+<a href=https://github.com/Mortrack/MLX90614_STM_driver/blob/main/documentation/pdfs/STM32CubeMX_configurations_report.pdf>STM32CubeMX_configurations_report.pdf</a>
 file. In addition, feel free to also
-<a href=#>review the electrical schematic used during those validations, where 4.7k ohm resistors were used</a>
+<a href=https://github.com/Mortrack/MLX90614_STM_driver/blob/main/documentation/EXTRA%20information/mlx90614_i2c_electrical_diagram_but_with_4k7_pullup_resistors_each.png>review the electrical schematic used during those validations, where 4.7k ohm resistors were used</a>
 for each pull-up resistors in that schematic. Finally, it is important to also highlight that the UART1 was used for the
 printf() function of the stdio.h C library.
 
