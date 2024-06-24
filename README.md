@@ -13,15 +13,15 @@ Nonetheless, if you do not need to change your MLX90614 device's slave address o
 can solve that part externally, you can have this Driver Library at you disposal to work in very professional and even
 educational projects by using the I2C Protocol. For more details about this and to learn how to use this library, feel
 free to read the
-<a href=#>documentation of this project</a>.
+<a href=https://github.com/Mortrack/MLX90614_STM_driver/tree/main/documentation>documentation of this project</a>.
 
 # How to explore the project files.
 The following will describe the general purpose of the folders that are located in the current directory address:
 
 - **/'Inc'**:
-    - This folder contains the <a href=#>header code file for this library</a>.
+    - This folder contains the <a href=https://github.com/Mortrack/MLX90614_STM_driver/blob/main/Inc/mlx90614_ir_thermometer_driver.h>header code file for this library</a>.
 - **/'Src'**:
-    - This folder contains the <a href=#>source code file for this library</a>.
+    - This folder contains the <a href=https://github.com/Mortrack/MLX90614_STM_driver/blob/main/Src/mlx90614_ir_thermometer_driver.c>source code file for this library</a>.
 - **/documentation**:
     - This folder provides the documentation to learn all the details of this library and to know how to use it.
 
