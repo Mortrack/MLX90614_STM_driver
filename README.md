@@ -1,6 +1,6 @@
 # MLX90614 Infra Red Thermometer C STMicroelectronics driver library
 
-Version: 0.0.0.0
+Version: 1.0.0.0
 
 This library provides the definitions, variables and functions necessary so that its implementer can use and communicate
 with a MLX90614 Infra Red Thermometer Device from a microcontroller/microprocessor of the STMicroelectronics device
