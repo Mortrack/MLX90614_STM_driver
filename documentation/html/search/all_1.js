@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['assert_5fparam_1',['assert_param',['../d2/d14/stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21',1,'stm32f1xx_hal_conf.h']]]
+  ['documentation_0',['MLX90614 Infra Red Thermometer C driver library documentation',['../index.html',1,'']]],
+  ['driver_20library_20documentation_1',['MLX90614 Infra Red Thermometer C driver library documentation',['../index.html',1,'']]],
+  ['driver_20module_2',['MLX90614 Infra Red Thermometer Driver module',['../dc/d5e/group__mlx90614.html',1,'']]]
 ];
