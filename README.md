@@ -34,4 +34,4 @@ professional MLX90614 Driver Library together.
 
 # SPECIAL THANKS:
 
-To Mary Broadway (Sr. Inside Sales Responsible) and Karel from the Melexis team for taking the time to help me in understanding their procedure used to change the Slave Address in a MLX90614 EEPROM.
+To Mary Broadway (Sr. Inside Sales Responsible) and Karel Vanroye from the Melexis team for taking the time to help me in understanding their procedure used to change the Slave Address in a MLX90614 EEPROM.
