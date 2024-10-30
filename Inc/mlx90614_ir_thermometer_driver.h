@@ -491,7 +491,7 @@ MLX90614_Status set_mlx90614_module_slave_address(uint8_t slave_address);
  *          simultaneously connected this that I2C Peripheral. Therefore, it is highly suggested to have only one
  *          MLX90614 Device connected at a time whenever it is intended to use this function.</b></i>
  *
- * @param slave_address     New slave address value that wants to be assigned and stored in the EEPROM of to the
+ * @param new_slave_address New slave address value that wants to be assigned and stored in the EEPROM of to the
  *                          MLX90614 Infra Red Thermometer. The following are the possible values of this param:<br><br>
  *                          * \f$1_{d}\f$ up to \f$127_{d}\f$ = Valid slave address.<br>
  *                          * \f$0\f$ and any value greater than \f$127_{d}\f$ = Invalid slave address values.
@@ -501,7 +501,9 @@ MLX90614_Status set_mlx90614_module_slave_address(uint8_t slave_address);
  * @retval  MLX90614_EC_NR If there was no MLX90614 device ready for an I2C communication.
  * @retval  MLX90614_EC_ERR <ul>
  *                              <li>
- *                                  If the \p slave_address param contains an invalid slave address value.
+ *                                  If the \p slave_address param contains an invalid slave address value. A valid slave
+ *                                  address should be within the range of @ref MLX90614_MIN_VALID_SLAVE_ADDRESS_VALUE up
+ *                                  to @ref MLX90614_MAX_VALID_SLAVE_ADDRESS_VALUE .
  *                              </li>
  *                              <li>
  *                                  If, after requesting to write the \p slave_address param into the MLX90614 EEPROM,
@@ -700,3 +702,4 @@ MLX90614_Status init_mlx90614_module(I2C_HandleTypeDef *hi2c, uint8_t slave_addr
 #endif /* MLX90614_IR_THERMOMETER_H_ */
 
 /** @} */
+
