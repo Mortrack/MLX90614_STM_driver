@@ -100,10 +100,6 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_MLX90614_READY_NUMBER_OF_TRIALS</b>&#160;&#160;&#160;(1)</td></tr>
 <tr class="memdesc:gabac29e4f773d26a3c0b2cd4ae039e28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of attempts to be made whenever checking if the MLX90614 Infra Red Thermometer is ready for I2C communication. <br /></td></tr>
 <tr class="separator:gabac29e4f773d26a3c0b2cd4ae039e28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga12f096095ac2435b723d8e470c92b3d9" id="r_ga12f096095ac2435b723d8e470c92b3d9"><td class="memItemLeft" align="right" valign="top"><a id="ga12f096095ac2435b723d8e470c92b3d9" name="ga12f096095ac2435b723d8e470c92b3d9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MLX90614_MAX_SENSORS_PLUS_ONE</b>&#160;&#160;&#160;(128)</td></tr>
-<tr class="memdesc:ga12f096095ac2435b723d8e470c92b3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of MLX90614 Infra Red Thermometer Devices that can be simultaneously connected via common 2 wires, plus one, according to the MLX90614 Datasheet. <br /></td></tr>
-<tr class="separator:ga12f096095ac2435b723d8e470c92b3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga67d88492a08fd21b4ce35eb077faf9cd" id="r_ga67d88492a08fd21b4ce35eb077faf9cd"><td class="memItemLeft" align="right" valign="top"><a id="ga67d88492a08fd21b4ce35eb077faf9cd" name="ga67d88492a08fd21b4ce35eb077faf9cd"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MLX90614_RAM_OR_EEPROM_ADDRESS_SIZE</b>&#160;&#160;&#160;(1)</td></tr>
 <tr class="memdesc:ga67d88492a08fd21b4ce35eb077faf9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of any single RAM or EEPROM address that the manufacturer has implemented in the MLX90614 Infra Red Thermometer. <br /></td></tr>
@@ -124,20 +120,32 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MLX90614_TEMPERATURE_RESULT_SIZE</b>&#160;&#160;&#160;(2)</td></tr>
 <tr class="memdesc:ga228396eace463c5be254380927ca1b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature data size in bytes from a single temperature reading that the MLX90614 Infra Red Thermometer can do. <br /></td></tr>
 <tr class="separator:ga228396eace463c5be254380927ca1b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66d3f93ab7ed474a62ff0a5ea2ba1c6d" id="r_ga66d3f93ab7ed474a62ff0a5ea2ba1c6d"><td class="memItemLeft" align="right" valign="top"><a id="ga66d3f93ab7ed474a62ff0a5ea2ba1c6d" name="ga66d3f93ab7ed474a62ff0a5ea2ba1c6d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MLX90614_EEPROM_SLAVE_ADDRESS_SIZE</b>&#160;&#160;&#160;(2)</td></tr>
-<tr class="memdesc:ga66d3f93ab7ed474a62ff0a5ea2ba1c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">MLX90614's Slave Address EEPROM value size in bytes, where the first byte (i.e., the LSB) is where the actual Slave Address is located at and where the second byte (i.e., the MSB) does not matter apparently. <br /></td></tr>
+<tr class="memitem:ga66d3f93ab7ed474a62ff0a5ea2ba1c6d" id="r_ga66d3f93ab7ed474a62ff0a5ea2ba1c6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga66d3f93ab7ed474a62ff0a5ea2ba1c6d">MLX90614_EEPROM_SLAVE_ADDRESS_SIZE</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="memdesc:ga66d3f93ab7ed474a62ff0a5ea2ba1c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">MLX90614's Slave Address EEPROM value size in bytes, where the first byte (i.e., the LSB) is where the actual Slave Address is located at and where the second byte (i.e., the MSB) contains unknown data.  <br /></td></tr>
 <tr class="separator:ga66d3f93ab7ed474a62ff0a5ea2ba1c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaca54ccb359020f6e8ef3e2001b2ea0" id="r_gaaaca54ccb359020f6e8ef3e2001b2ea0"><td class="memItemLeft" align="right" valign="top"><a id="gaaaca54ccb359020f6e8ef3e2001b2ea0" name="gaaaca54ccb359020f6e8ef3e2001b2ea0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MLX90614_I2C_WRITE_COMMAND_SIZE</b>&#160;&#160;&#160;(4)</td></tr>
+<tr class="memdesc:gaaaca54ccb359020f6e8ef3e2001b2ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">MLX90614's I2C Write command size. <br /></td></tr>
+<tr class="separator:gaaaca54ccb359020f6e8ef3e2001b2ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c734a1c99697a32b40603a4af08b43c" id="r_ga4c734a1c99697a32b40603a4af08b43c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga4c734a1c99697a32b40603a4af08b43c">MLX90614_SLAVE_ADDRESS_EEPROM_ADDRESS</a>&#160;&#160;&#160;(0x2E)</td></tr>
 <tr class="memdesc:ga4c734a1c99697a32b40603a4af08b43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">EEPROM address that the MLX90614 Infra Red Thermometer has designated for storing its designated Slave Address to which it will respond via the I2C Protocol.  <br /></td></tr>
 <tr class="separator:ga4c734a1c99697a32b40603a4af08b43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00c18ce30b92d8c8f404e9f61ae0a98f" id="r_ga00c18ce30b92d8c8f404e9f61ae0a98f"><td class="memItemLeft" align="right" valign="top"><a id="ga00c18ce30b92d8c8f404e9f61ae0a98f" name="ga00c18ce30b92d8c8f404e9f61ae0a98f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MLX90614_PEC_RESET_VALUE</b>&#160;&#160;&#160;(0x00)</td></tr>
+<tr class="memdesc:ga00c18ce30b92d8c8f404e9f61ae0a98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value with which a new PEC byte to calculate should be defined/started with in order have a correct calculation by the calculate_pec function. <br /></td></tr>
+<tr class="separator:ga00c18ce30b92d8c8f404e9f61ae0a98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b9afbce19b7a13be9a8154e9333bec8" id="r_ga1b9afbce19b7a13be9a8154e9333bec8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga1b9afbce19b7a13be9a8154e9333bec8">MLX90614_SLAVE_ADDRESS_EEPROM_ERASE_VALUE</a>&#160;&#160;&#160;(0x00)</td></tr>
 <tr class="memdesc:ga1b9afbce19b7a13be9a8154e9333bec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value used to erase the currently configured Slave Address in the MLX90614 EEPROM.  <br /></td></tr>
 <tr class="separator:ga1b9afbce19b7a13be9a8154e9333bec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga772e0618dbf3a33629ffc910df2042b5" id="r_ga772e0618dbf3a33629ffc910df2042b5"><td class="memItemLeft" align="right" valign="top"><a id="ga772e0618dbf3a33629ffc910df2042b5" name="ga772e0618dbf3a33629ffc910df2042b5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MLX90614_HAL_I2C_ANY_SLAVE_ADDRESS_ONE_BIT_LEFT_SHIFTED</b>&#160;&#160;&#160;(0x00)</td></tr>
-<tr class="memdesc:ga772e0618dbf3a33629ffc910df2042b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slave Address value, shifted one bit to the left, at which the MLX90614 Device will respond to right after the Slave Address value stored in its EEPROM is changed but also just before Power Cycling it. <br /></td></tr>
-<tr class="separator:ga772e0618dbf3a33629ffc910df2042b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe72d16b50437264e7b0df960854b467" id="r_gafe72d16b50437264e7b0df960854b467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#gafe72d16b50437264e7b0df960854b467">MLX90614_MAX_VALID_SLAVE_ADDRESS_VALUE</a>&#160;&#160;&#160;(0X7E)</td></tr>
+<tr class="memdesc:gafe72d16b50437264e7b0df960854b467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum valid slave address value that can be assigned to the MLX90614 Device.  <br /></td></tr>
+<tr class="separator:gafe72d16b50437264e7b0df960854b467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b387a44497d8a77cd0536c6f5c1ea31" id="r_ga2b387a44497d8a77cd0536c6f5c1ea31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga2b387a44497d8a77cd0536c6f5c1ea31">MLX90614_MAX_VALID_SLAVE_ADDRESS_VALUE_PLUS_ONE</a>&#160;&#160;&#160;(0X7F)</td></tr>
+<tr class="memdesc:ga2b387a44497d8a77cd0536c6f5c1ea31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum valid slave address value, plus one, that can be assigned to the MLX90614 Device.  <br /></td></tr>
+<tr class="separator:ga2b387a44497d8a77cd0536c6f5c1ea31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36d9ae5462da5b629df5d6500270d284" id="r_ga36d9ae5462da5b629df5d6500270d284"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga36d9ae5462da5b629df5d6500270d284">MLX90614_MIN_VALID_SLAVE_ADDRESS_VALUE</a>&#160;&#160;&#160;(0X03)</td></tr>
+<tr class="memdesc:ga36d9ae5462da5b629df5d6500270d284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum valid slave address value that can be assigned to the MLX90614 Device.  <br /></td></tr>
+<tr class="separator:ga36d9ae5462da5b629df5d6500270d284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -170,9 +178,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5d48cb3f60ccf2c42b7cc7e2fae5db01" id="r_ga5d48cb3f60ccf2c42b7cc7e2fae5db01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga612d2cf9c00ca6131bc1237c7bf1c81d">MLX90614_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga5d48cb3f60ccf2c42b7cc7e2fae5db01">set_mlx90614_module_slave_address</a> (uint8_t slave_address)</td></tr>
 <tr class="memdesc:ga5d48cb3f60ccf2c42b7cc7e2fae5db01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets and configures a new MLX90614 device slave address in the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> .  <br /></td></tr>
 <tr class="separator:ga5d48cb3f60ccf2c42b7cc7e2fae5db01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffd009f9ff24e5f96dc473909dcc2cac" id="r_gaffd009f9ff24e5f96dc473909dcc2cac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga612d2cf9c00ca6131bc1237c7bf1c81d">MLX90614_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#gaffd009f9ff24e5f96dc473909dcc2cac">set_mlx90614_device_slave_address</a> (uint8_t slave_address)</td></tr>
-<tr class="memdesc:gaffd009f9ff24e5f96dc473909dcc2cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new Slave Address value in the corresponding MLX90614 EEPROM Address and also configured that Slave Address value in the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> .  <br /></td></tr>
-<tr class="separator:gaffd009f9ff24e5f96dc473909dcc2cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f39b69851b00dad69e92099a6df997e" id="r_ga1f39b69851b00dad69e92099a6df997e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga612d2cf9c00ca6131bc1237c7bf1c81d">MLX90614_Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga1f39b69851b00dad69e92099a6df997e">set_mlx90614_device_slave_address</a> (uint8_t new_slave_address)</td></tr>
+<tr class="memdesc:ga1f39b69851b00dad69e92099a6df997e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new Slave Address value in the corresponding MLX90614 EEPROM Address and also configures that Slave Address value in the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> .<br  />
+ <em><b style="color:red;"><u>WARNING 1</u>:</b><b> Do not have the MLX90614 Device wired to your MCU/MPU whenever you flash code into it and where you simultaneously have made use of this function. If you neglect this indication, then your MLX90614 may have its EEPROM corrupted and will stop working if that happens.</b></em>  <br /></td></tr>
+<tr class="separator:ga1f39b69851b00dad69e92099a6df997e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c76c39595c9dd167047fecc895a83c7" id="r_ga0c76c39595c9dd167047fecc895a83c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga336df9ba0ca2d4b5f27f3f5ac122f9cb">MLX90614_Temp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga0c76c39595c9dd167047fecc895a83c7">get_mlx90614_temperature_type</a> (void)</td></tr>
 <tr class="memdesc:ga0c76c39595c9dd167047fecc895a83c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Temperature Type with which the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> is currently responding with whenever a temperature value is requested from the MLX90614 Infra Red Thermometer.  <br /></td></tr>
 <tr class="separator:ga0c76c39595c9dd167047fecc895a83c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,7 +315,7 @@ Another thing to highlight is that this <a class="el" href="../../dc/d5e/group__
 <div class="line"><span class="comment">//}</span></div>
 <div class="line"><span class="comment">//printf(&quot;INFO: Changing the Device Slave value in the EEPROM of the MLX90614 Device and also configuring it in the MLX90614 Driver Library...\r\n&quot;);</span></div>
 <div class="line"><span class="comment">//ret =  set_mlx90614_device_slave_address(new_slave_address);</span></div>
-<div class="line"><span class="comment">//if (test_ret == MLX90614_EC_OK)</span></div>
+<div class="line"><span class="comment">//if (ret == MLX90614_EC_OK)</span></div>
 <div class="line"><span class="comment">//{</span></div>
 <div class="line"><span class="comment">//    printf(&quot;SUCCESS: The MLX90614 Slave Address in its EEPROM has been changed to %d (in decimal value).\r\n&quot;, new_slave_address);</span></div>
 <div class="line"><span class="comment">//}</span></div>
@@ -316,9 +325,9 @@ Another thing to highlight is that this <a class="el" href="../../dc/d5e/group__
 <div class="line"><span class="comment">//    while(1);</span></div>
 <div class="line"><span class="comment">//}</span></div>
 <div class="line"><span class="comment">//printf(&quot;WAITING: Please indicate to the MCU/MPU, via the assigned Input GPIO, that the Power Cycle of the MLX90614 Device has been made.\r\n&quot;);</span></div>
-<div class="line"><span class="comment">//if (HAL_GPIO_ReadPin(is_MLX90614_powered_cycled_GPIO_Input_GPIO_Port, is_MLX90614_powered_cycled_GPIO_Input_Pin) != GPIO_PIN_SET)</span></div>
+<div class="line"><span class="comment">//while(HAL_GPIO_ReadPin(is_MLX90614_powered_cycled_GPIO_Input_GPIO_Port, is_MLX90614_powered_cycled_GPIO_Input_Pin) != GPIO_PIN_SET)</span></div>
 <div class="line"><span class="comment">//{</span></div>
-<div class="line"><span class="comment">//    while(1);</span></div>
+<div class="line"><span class="comment">//    // Wait here until user indicates that the MLX90614 Device has been power-cycled.</span></div>
 <div class="line"><span class="comment">//}</span></div>
 <div class="line"><span class="comment">//printf(&quot;INFO: Proving that the MLX90614 Driver Library has now configured the New Slave Address in it because the MLX90614 Device now responds to that one...\r\n&quot;);</span></div>
 <div class="line"><span class="comment">//slave_address_configured_in_the_driver_library = get_mlx90614_module_slave_address();</span></div>
@@ -504,26 +513,45 @@ Another thing to highlight is that this <a class="el" href="../../dc/d5e/group__
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">while</span>(1); <span class="comment">// Stop the program here.</span></div>
-<div class="ttc" id="agroup__mlx90614_html_ga0afd9343ce1057918dd5efffae812481"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga0afd9343ce1057918dd5efffae812481">get_mlx90614_module_slave_address</a></div><div class="ttdeci">uint8_t get_mlx90614_module_slave_address(void)</div><div class="ttdoc">Gets the slave address of the MLX90614 Infra Red Thermometer that is currently configured for use in ...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:166</div></div>
-<div class="ttc" id="agroup__mlx90614_html_ga0c76c39595c9dd167047fecc895a83c7"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga0c76c39595c9dd167047fecc895a83c7">get_mlx90614_temperature_type</a></div><div class="ttdeci">MLX90614_Temp_t get_mlx90614_temperature_type(void)</div><div class="ttdoc">Gets the Temperature Type with which the MLX90614 Infra Red Thermometer Driver module is currently re...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:250</div></div>
-<div class="ttc" id="agroup__mlx90614_html_ga50ac5125e6a32404ff52ee6c46153153"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga50ac5125e6a32404ff52ee6c46153153">get_mlx90614_object2_temperature</a></div><div class="ttdeci">MLX90614_Status get_mlx90614_object2_temperature(float *dst)</div><div class="ttdoc">Gets the Object2 Temperature from the MLX90614 Infra Red Thermometer Device in the units correspondin...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:331</div></div>
-<div class="ttc" id="agroup__mlx90614_html_ga51387045fdb6684d831af22e00356f26"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga51387045fdb6684d831af22e00356f26">set_mlx90614_temperature_type</a></div><div class="ttdeci">MLX90614_Status set_mlx90614_temperature_type(MLX90614_Temp_t temp_t)</div><div class="ttdoc">Sets and configures a new Temperature Type in the MLX90614 Infra Red Thermometer Driver module for wh...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:255</div></div>
-<div class="ttc" id="agroup__mlx90614_html_ga5d48cb3f60ccf2c42b7cc7e2fae5db01"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga5d48cb3f60ccf2c42b7cc7e2fae5db01">set_mlx90614_module_slave_address</a></div><div class="ttdeci">MLX90614_Status set_mlx90614_module_slave_address(uint8_t slave_address)</div><div class="ttdoc">Sets and configures a new MLX90614 device slave address in the MLX90614 Infra Red Thermometer Driver ...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:171</div></div>
-<div class="ttc" id="agroup__mlx90614_html_ga612d2cf9c00ca6131bc1237c7bf1c81d"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga612d2cf9c00ca6131bc1237c7bf1c81d">MLX90614_Status</a></div><div class="ttdeci">MLX90614_Status</div><div class="ttdoc">MLX90614 Infra Red Thermometer Driver Exception codes.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:365</div></div>
-<div class="ttc" id="agroup__mlx90614_html_ga77e2e00aef141b2543f481cb5ad9b1dd"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga77e2e00aef141b2543f481cb5ad9b1dd">init_mlx90614_module</a></div><div class="ttdeci">MLX90614_Status init_mlx90614_module(I2C_HandleTypeDef *hi2c, uint8_t slave_address, MLX90614_Temp_t temp_t)</div><div class="ttdoc">Initializes the MLX90614 Infra Red Thermometer Driver module in order to be able to use its provided ...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:91</div></div>
-<div class="ttc" id="agroup__mlx90614_html_ga94d90126d26e0476a0801c50bf8cd4d1"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga94d90126d26e0476a0801c50bf8cd4d1">find_mlx90614_slave_address</a></div><div class="ttdeci">MLX90614_Status find_mlx90614_slave_address(void)</div><div class="ttdoc">Finds a Device that is ready for I2C communication, if there is any, and configures its slave address...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:139</div></div>
-<div class="ttc" id="agroup__mlx90614_html_gaa85e26a0f20b7cad4d59aaf9f5606163"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gaa85e26a0f20b7cad4d59aaf9f5606163">get_mlx90614_ambient_temperature</a></div><div class="ttdeci">MLX90614_Status get_mlx90614_ambient_temperature(float *dst)</div><div class="ttdoc">Gets the Ambient Temperature from the MLX90614 Infra Red Thermometer Device in the units correspondin...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:277</div></div>
-<div class="ttc" id="agroup__mlx90614_html_gae69c2acea57a31b916694c4945ac32f8"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gae69c2acea57a31b916694c4945ac32f8">get_mlx90614_object1_temperature</a></div><div class="ttdeci">MLX90614_Status get_mlx90614_object1_temperature(float *dst)</div><div class="ttdoc">Gets the Object1 Temperature from the MLX90614 Infra Red Thermometer Device in the units correspondin...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:304</div></div>
-<div class="ttc" id="agroup__mlx90614_html_gga336df9ba0ca2d4b5f27f3f5ac122f9cba23163b651d4fe57b58d121ee24712d66"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga336df9ba0ca2d4b5f27f3f5ac122f9cba23163b651d4fe57b58d121ee24712d66">MLX90614_Temp_C</a></div><div class="ttdeci">@ MLX90614_Temp_C</div><div class="ttdoc">MLX90614 Infra Red Thermometer values read in Celsius.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:381</div></div>
-<div class="ttc" id="agroup__mlx90614_html_gga336df9ba0ca2d4b5f27f3f5ac122f9cba8e64cc12ecba97383cab991e2fe45049"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga336df9ba0ca2d4b5f27f3f5ac122f9cba8e64cc12ecba97383cab991e2fe45049">MLX90614_Temp_K</a></div><div class="ttdeci">@ MLX90614_Temp_K</div><div class="ttdoc">MLX90614 Infra Red Thermometer values read in Kelvin.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:380</div></div>
-<div class="ttc" id="agroup__mlx90614_html_gga336df9ba0ca2d4b5f27f3f5ac122f9cbac686c806230c0ff08f5ab9a626f112dd"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga336df9ba0ca2d4b5f27f3f5ac122f9cbac686c806230c0ff08f5ab9a626f112dd">MLX90614_Temp_F</a></div><div class="ttdeci">@ MLX90614_Temp_F</div><div class="ttdoc">MLX90614 Infra Red Thermometer values read in Fahrenheit.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:382</div></div>
-<div class="ttc" id="agroup__mlx90614_html_gga612d2cf9c00ca6131bc1237c7bf1c81da010d64b081d1688f82881a86c21aa1e9"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga612d2cf9c00ca6131bc1237c7bf1c81da010d64b081d1688f82881a86c21aa1e9">MLX90614_EC_NR</a></div><div class="ttdeci">@ MLX90614_EC_NR</div><div class="ttdoc">MLX90614 Infra Red Thermometer Driver Process has concluded with no response.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:368</div></div>
-<div class="ttc" id="agroup__mlx90614_html_gga612d2cf9c00ca6131bc1237c7bf1c81da2b66a767afdc0991cf5338787bc7bedb"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga612d2cf9c00ca6131bc1237c7bf1c81da2b66a767afdc0991cf5338787bc7bedb">MLX90614_EC_ERR</a></div><div class="ttdeci">@ MLX90614_EC_ERR</div><div class="ttdoc">MLX90614 Infra Red Thermometer Driver Process has failed.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:370</div></div>
-<div class="ttc" id="agroup__mlx90614_html_gga612d2cf9c00ca6131bc1237c7bf1c81da3a43d5540bc1298076e3e7f88ed68162"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga612d2cf9c00ca6131bc1237c7bf1c81da3a43d5540bc1298076e3e7f88ed68162">MLX90614_EC_OK</a></div><div class="ttdeci">@ MLX90614_EC_OK</div><div class="ttdoc">MLX90614 Infra Red Thermometer Driver Process was successful.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:366</div></div>
+<div class="ttc" id="agroup__mlx90614_html_ga0afd9343ce1057918dd5efffae812481"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga0afd9343ce1057918dd5efffae812481">get_mlx90614_module_slave_address</a></div><div class="ttdeci">uint8_t get_mlx90614_module_slave_address(void)</div><div class="ttdoc">Gets the slave address of the MLX90614 Infra Red Thermometer that is currently configured for use in ...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:197</div></div>
+<div class="ttc" id="agroup__mlx90614_html_ga0c76c39595c9dd167047fecc895a83c7"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga0c76c39595c9dd167047fecc895a83c7">get_mlx90614_temperature_type</a></div><div class="ttdeci">MLX90614_Temp_t get_mlx90614_temperature_type(void)</div><div class="ttdoc">Gets the Temperature Type with which the MLX90614 Infra Red Thermometer Driver module is currently re...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:287</div></div>
+<div class="ttc" id="agroup__mlx90614_html_ga50ac5125e6a32404ff52ee6c46153153"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga50ac5125e6a32404ff52ee6c46153153">get_mlx90614_object2_temperature</a></div><div class="ttdeci">MLX90614_Status get_mlx90614_object2_temperature(float *dst)</div><div class="ttdoc">Gets the Object2 Temperature from the MLX90614 Infra Red Thermometer Device in the units correspondin...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:368</div></div>
+<div class="ttc" id="agroup__mlx90614_html_ga51387045fdb6684d831af22e00356f26"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga51387045fdb6684d831af22e00356f26">set_mlx90614_temperature_type</a></div><div class="ttdeci">MLX90614_Status set_mlx90614_temperature_type(MLX90614_Temp_t temp_t)</div><div class="ttdoc">Sets and configures a new Temperature Type in the MLX90614 Infra Red Thermometer Driver module for wh...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:292</div></div>
+<div class="ttc" id="agroup__mlx90614_html_ga5d48cb3f60ccf2c42b7cc7e2fae5db01"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga5d48cb3f60ccf2c42b7cc7e2fae5db01">set_mlx90614_module_slave_address</a></div><div class="ttdeci">MLX90614_Status set_mlx90614_module_slave_address(uint8_t slave_address)</div><div class="ttdoc">Sets and configures a new MLX90614 device slave address in the MLX90614 Infra Red Thermometer Driver ...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:202</div></div>
+<div class="ttc" id="agroup__mlx90614_html_ga612d2cf9c00ca6131bc1237c7bf1c81d"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga612d2cf9c00ca6131bc1237c7bf1c81d">MLX90614_Status</a></div><div class="ttdeci">MLX90614_Status</div><div class="ttdoc">MLX90614 Infra Red Thermometer Driver Exception codes.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:369</div></div>
+<div class="ttc" id="agroup__mlx90614_html_ga77e2e00aef141b2543f481cb5ad9b1dd"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga77e2e00aef141b2543f481cb5ad9b1dd">init_mlx90614_module</a></div><div class="ttdeci">MLX90614_Status init_mlx90614_module(I2C_HandleTypeDef *hi2c, uint8_t slave_address, MLX90614_Temp_t temp_t)</div><div class="ttdoc">Initializes the MLX90614 Infra Red Thermometer Driver module in order to be able to use its provided ...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:122</div></div>
+<div class="ttc" id="agroup__mlx90614_html_ga94d90126d26e0476a0801c50bf8cd4d1"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#ga94d90126d26e0476a0801c50bf8cd4d1">find_mlx90614_slave_address</a></div><div class="ttdeci">MLX90614_Status find_mlx90614_slave_address(void)</div><div class="ttdoc">Finds a Device that is ready for I2C communication, if there is any, and configures its slave address...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:170</div></div>
+<div class="ttc" id="agroup__mlx90614_html_gaa85e26a0f20b7cad4d59aaf9f5606163"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gaa85e26a0f20b7cad4d59aaf9f5606163">get_mlx90614_ambient_temperature</a></div><div class="ttdeci">MLX90614_Status get_mlx90614_ambient_temperature(float *dst)</div><div class="ttdoc">Gets the Ambient Temperature from the MLX90614 Infra Red Thermometer Device in the units correspondin...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:314</div></div>
+<div class="ttc" id="agroup__mlx90614_html_gae69c2acea57a31b916694c4945ac32f8"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gae69c2acea57a31b916694c4945ac32f8">get_mlx90614_object1_temperature</a></div><div class="ttdeci">MLX90614_Status get_mlx90614_object1_temperature(float *dst)</div><div class="ttdoc">Gets the Object1 Temperature from the MLX90614 Infra Red Thermometer Device in the units correspondin...</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.c:341</div></div>
+<div class="ttc" id="agroup__mlx90614_html_gga336df9ba0ca2d4b5f27f3f5ac122f9cba23163b651d4fe57b58d121ee24712d66"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga336df9ba0ca2d4b5f27f3f5ac122f9cba23163b651d4fe57b58d121ee24712d66">MLX90614_Temp_C</a></div><div class="ttdeci">@ MLX90614_Temp_C</div><div class="ttdoc">MLX90614 Infra Red Thermometer values read in Celsius.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:385</div></div>
+<div class="ttc" id="agroup__mlx90614_html_gga336df9ba0ca2d4b5f27f3f5ac122f9cba8e64cc12ecba97383cab991e2fe45049"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga336df9ba0ca2d4b5f27f3f5ac122f9cba8e64cc12ecba97383cab991e2fe45049">MLX90614_Temp_K</a></div><div class="ttdeci">@ MLX90614_Temp_K</div><div class="ttdoc">MLX90614 Infra Red Thermometer values read in Kelvin.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:384</div></div>
+<div class="ttc" id="agroup__mlx90614_html_gga336df9ba0ca2d4b5f27f3f5ac122f9cbac686c806230c0ff08f5ab9a626f112dd"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga336df9ba0ca2d4b5f27f3f5ac122f9cbac686c806230c0ff08f5ab9a626f112dd">MLX90614_Temp_F</a></div><div class="ttdeci">@ MLX90614_Temp_F</div><div class="ttdoc">MLX90614 Infra Red Thermometer values read in Fahrenheit.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:386</div></div>
+<div class="ttc" id="agroup__mlx90614_html_gga612d2cf9c00ca6131bc1237c7bf1c81da010d64b081d1688f82881a86c21aa1e9"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga612d2cf9c00ca6131bc1237c7bf1c81da010d64b081d1688f82881a86c21aa1e9">MLX90614_EC_NR</a></div><div class="ttdeci">@ MLX90614_EC_NR</div><div class="ttdoc">MLX90614 Infra Red Thermometer Driver Process has concluded with no response.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:372</div></div>
+<div class="ttc" id="agroup__mlx90614_html_gga612d2cf9c00ca6131bc1237c7bf1c81da2b66a767afdc0991cf5338787bc7bedb"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga612d2cf9c00ca6131bc1237c7bf1c81da2b66a767afdc0991cf5338787bc7bedb">MLX90614_EC_ERR</a></div><div class="ttdeci">@ MLX90614_EC_ERR</div><div class="ttdoc">MLX90614 Infra Red Thermometer Driver Process has failed.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:374</div></div>
+<div class="ttc" id="agroup__mlx90614_html_gga612d2cf9c00ca6131bc1237c7bf1c81da3a43d5540bc1298076e3e7f88ed68162"><div class="ttname"><a href="../../dc/d5e/group__mlx90614.html#gga612d2cf9c00ca6131bc1237c7bf1c81da3a43d5540bc1298076e3e7f88ed68162">MLX90614_EC_OK</a></div><div class="ttdeci">@ MLX90614_EC_OK</div><div class="ttdoc">MLX90614 Infra Red Thermometer Driver Process was successful.</div><div class="ttdef"><b>Definition</b> mlx90614_ir_thermometer_driver.h:370</div></div>
 <div class="ttc" id="amlx90614__ir__thermometer__driver_8h_html"><div class="ttname"><a href="../../da/d74/mlx90614__ir__thermometer__driver_8h.html">mlx90614_ir_thermometer_driver.h</a></div><div class="ttdoc">MLX90614 Infra Red Thermometer's driver Header file.</div></div>
 </div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Cesar Miranda Meza (<a href="#" onclick="location.href='mai'+'lto:'+'cmi'+'ra'+'nda'+'me'+'za3'+'@h'+'otm'+'ai'+'l.c'+'om'; return false;">cmira<span class="obfuscator">.nosp@m.</span>ndam<span class="obfuscator">.nosp@m.</span>eza3@<span class="obfuscator">.nosp@m.</span>hotm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>June 23, 2024. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>June 23, 2024. </dd>
+<dd>
+LAST UPDATE: October 30, 2024. </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga66d3f93ab7ed474a62ff0a5ea2ba1c6d" name="ga66d3f93ab7ed474a62ff0a5ea2ba1c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66d3f93ab7ed474a62ff0a5ea2ba1c6d">&#9670;&#160;</a></span>MLX90614_EEPROM_SLAVE_ADDRESS_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MLX90614_EEPROM_SLAVE_ADDRESS_SIZE&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MLX90614's Slave Address EEPROM value size in bytes, where the first byte (i.e., the LSB) is where the actual Slave Address is located at and where the second byte (i.e., the MSB) contains unknown data. </p>
+<dl class="section note"><dt>Note</dt><dd>I could not find anywhere in the documentation what the most significant byte stands for, but it is required in the process of changing the Slave Address in the EEPROM of the MLX90614 Device according to the <a href="https://github.com/melexis/i2c-stick/blob/main/i2c-stick-arduino/mlx90614_cmd.cpp#L456-L512">code provided to me by the Melexis team</a> via email after requesting them for help in knowing how to change the slave address of a MLX90614 Device. </dd></dl>
+
+</div>
+</div>
 <a id="ga01c66ad2c6e36a3e874c656ad66fc4d9" name="ga01c66ad2c6e36a3e874c656ad66fc4d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga01c66ad2c6e36a3e874c656ad66fc4d9">&#9670;&#160;</a></span>MLX90614_ERASE_OR_WRITE_CELL_TIME</h2>
 
@@ -543,6 +571,57 @@ Have in consideration that the MLX90614 Datasheet states that either erasing or 
 
 </div>
 </div>
+<a id="gafe72d16b50437264e7b0df960854b467" name="gafe72d16b50437264e7b0df960854b467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe72d16b50437264e7b0df960854b467">&#9670;&#160;</a></span>MLX90614_MAX_VALID_SLAVE_ADDRESS_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MLX90614_MAX_VALID_SLAVE_ADDRESS_VALUE&#160;&#160;&#160;(0X7E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum valid slave address value that can be assigned to the MLX90614 Device. </p>
+<dl class="section note"><dt>Note</dt><dd>I got this value from a <a href="https://github.com/melexis/i2c-stick/blob/main/i2c-stick-arduino/mlx90614_cmd.cpp#L456-L512">code provided to me by the Melexis team</a> via email after requesting them for help in knowing how to change the slave address of a MLX90614 Device. </dd></dl>
+
+</div>
+</div>
+<a id="ga2b387a44497d8a77cd0536c6f5c1ea31" name="ga2b387a44497d8a77cd0536c6f5c1ea31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b387a44497d8a77cd0536c6f5c1ea31">&#9670;&#160;</a></span>MLX90614_MAX_VALID_SLAVE_ADDRESS_VALUE_PLUS_ONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MLX90614_MAX_VALID_SLAVE_ADDRESS_VALUE_PLUS_ONE&#160;&#160;&#160;(0X7F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum valid slave address value, plus one, that can be assigned to the MLX90614 Device. </p>
+<dl class="section note"><dt>Note</dt><dd>I got this value from a <a href="https://github.com/melexis/i2c-stick/blob/main/i2c-stick-arduino/mlx90614_cmd.cpp#L456-L512">code provided to me by the Melexis team</a> via email after requesting them for help in knowing how to change the slave address of a MLX90614 Device. </dd></dl>
+
+</div>
+</div>
+<a id="ga36d9ae5462da5b629df5d6500270d284" name="ga36d9ae5462da5b629df5d6500270d284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36d9ae5462da5b629df5d6500270d284">&#9670;&#160;</a></span>MLX90614_MIN_VALID_SLAVE_ADDRESS_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MLX90614_MIN_VALID_SLAVE_ADDRESS_VALUE&#160;&#160;&#160;(0X03)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimum valid slave address value that can be assigned to the MLX90614 Device. </p>
+<dl class="section note"><dt>Note</dt><dd>I got this value from a <a href="https://github.com/melexis/i2c-stick/blob/main/i2c-stick-arduino/mlx90614_cmd.cpp#L456-L512">code provided to me by the Melexis team</a> via email after requesting them for help in knowing how to change the slave address of a MLX90614 Device. </dd></dl>
+
+</div>
+</div>
 <a id="ga4c734a1c99697a32b40603a4af08b43c" name="ga4c734a1c99697a32b40603a4af08b43c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4c734a1c99697a32b40603a4af08b43c">&#9670;&#160;</a></span>MLX90614_SLAVE_ADDRESS_EEPROM_ADDRESS</h2>
 
@@ -556,7 +635,7 @@ Have in consideration that the MLX90614 Datasheet states that either erasing or 
 </div><div class="memdoc">
 
 <p>EEPROM address that the MLX90614 Infra Red Thermometer has designated for storing its designated Slave Address to which it will respond via the I2C Protocol. </p>
-<dl class="section note"><dt>Note</dt><dd><em><b style="color:orange;"><u>IMPORTANT-INFORMATION</u>:</b><b>The actual MLX90614 datasheet does not mention what is the EEPROM address value of the MLX90614 Slave Device and the nearest thing it states is what they defined/called as "SMBus address" whose EEPROM Address value is <code>0x0E</code> , but where it seems that, according to several statements of the community, this address value does not change the MLX90614 Device's Slave Address to which it will respond in a I2C Communication. However, I found a statement in a <a class="anchor" id="IwZXh0bgNhZW0CMTAAAR201BxXMK0Zf8QaL2r8vzwVFsQCKXd4v_XcA3elM7qyCQ_S7QM_SOqympc_aem_GqwHbzcMEAGRhF8-MJe3OA"></a>Mikroe Forum made by mynos, where he assures that he was able to change the MLX90614 Device's Slave Address with a 4 steps process where the EEPROM Address he wrote instead was actually <code>0x2E</code> . However, the author of <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> was still not able to change his MLX90614 Device's slave address even with this 4-step method, but decided to leave it in case it works for some people since some people over the internet have stated that this worked for them.</b></em> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><em><b style="color:orange;"><u>IMPORTANT-INFORMATION</u>:</b><b>The actual MLX90614 datasheet does not mention what is the EEPROM address value of the MLX90614 Slave Device and the nearest thing it states is what they defined/called as "SMBus address" whose EEPROM Address value is <code>0x0E</code> , but where it seems that, according to both several statements of the community and an actual Melexis team code that the author of the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> library received via email from them, this address value is actually <code>0x2E</code> .</b></em> </dd></dl>
 
 </div>
 </div>
@@ -573,7 +652,7 @@ Have in consideration that the MLX90614 Datasheet states that either erasing or 
 </div><div class="memdoc">
 
 <p>Value used to erase the currently configured Slave Address in the MLX90614 EEPROM. </p>
-<dl class="section note"><dt>Note</dt><dd>This value is not mentioned anywhere in the MLX90614 Datasheet; I was able to determine it via the 4-steps process described by <a class="anchor" id="IwZXh0bgNhZW0CMTAAAR201BxXMK0Zf8QaL2r8vzwVFsQCKXd4v_XcA3elM7qyCQ_S7QM_SOqympc_aem_GqwHbzcMEAGRhF8-MJe3OA"></a>mynos in a Mikroe Forum statement in order to change the Slave Address in a MLX90614 Device. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This value is not mentioned anywhere in the MLX90614 Datasheet; I was able to determine it via a <a href="https://github.com/melexis/i2c-stick/blob/main/i2c-stick-arduino/mlx90614_cmd.cpp#L456-L512">code provided to me by the Melexis team</a> via email after requesting them for help in knowing how to change the slave address of a MLX90614 Device. </dd></dl>
 
 </div>
 </div>
@@ -666,7 +745,9 @@ Have in consideration that the MLX90614 Datasheet states that either erasing or 
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>César Miranda Meza (<a href="#" onclick="location.href='mai'+'lto:'+'cmi'+'ra'+'nda'+'me'+'za3'+'@h'+'otm'+'ai'+'l.c'+'om'; return false;">cmira<span class="obfuscator">.nosp@m.</span>ndam<span class="obfuscator">.nosp@m.</span>eza3@<span class="obfuscator">.nosp@m.</span>hotm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>June 19, 2024. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>June 19, 2024. </dd>
+<dd>
+LAST UPDATE: October 30, 2024. </dd></dl>
 <p><b>Local uint8_t variable current_slave_address:</b> Contains the current slave address with which it is being attempted to get a response from a MLX90614 device.</p>
 <p><b>Local uint8_t variable current_slave_address_one_bit_left_shifted:</b> Contains the current slave address with which it is being attempted to get a response from a MLX90614 device, but with one bit left shift.</p>
 
@@ -913,9 +994,9 @@ If anything else went wrong.  </li>
 <ul>
 <li>\(0\) = The slave address will not be updated and the default <code>0x5A</code> value will be kept.<br  />
 </li>
-<li>\(1_{d}\) up to \(127_{d}\) = Update the slave address with the given custom value.<br  />
+<li>\(3_{d}\) up to \(126_{d}\) = Update the slave address with the given custom value.<br  />
 </li>
-<li>\(\geq 128_{d}\) = Invalid slave address values. </li>
+<li>\(1\), \(2\) and \(\geq 127_{d}\) = Invalid slave address values. </li>
 </ul>
 </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">temp_t</td><td>Desired Temperature Type with which it is desired for the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> to respond back whenever requesting it to get a temperature reading.</td></tr>
@@ -939,13 +1020,15 @@ If anything else went wrong.  </li>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>César Miranda Meza (<a href="#" onclick="location.href='mai'+'lto:'+'cmi'+'ra'+'nda'+'me'+'za3'+'@h'+'otm'+'ai'+'l.c'+'om'; return false;">cmira<span class="obfuscator">.nosp@m.</span>ndam<span class="obfuscator">.nosp@m.</span>eza3@<span class="obfuscator">.nosp@m.</span>hotm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>June 19, 2024. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>June 19, 2024. </dd>
+<dd>
+LAST UPDATE: October 30, 2024. </dd></dl>
 <p><b>Local uint8_t variable tmp_slave_addr_one_bit_left_shifted:</b> Contains the given slave address, but with one bit left shift.</p>
 
 </div>
 </div>
-<a id="gaffd009f9ff24e5f96dc473909dcc2cac" name="gaffd009f9ff24e5f96dc473909dcc2cac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaffd009f9ff24e5f96dc473909dcc2cac">&#9670;&#160;</a></span>set_mlx90614_device_slave_address()</h2>
+<a id="ga1f39b69851b00dad69e92099a6df997e" name="ga1f39b69851b00dad69e92099a6df997e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f39b69851b00dad69e92099a6df997e">&#9670;&#160;</a></span>set_mlx90614_device_slave_address()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -954,27 +1037,28 @@ If anything else went wrong.  </li>
           <td class="memname"><a class="el" href="../../dc/d5e/group__mlx90614.html#ga612d2cf9c00ca6131bc1237c7bf1c81d">MLX90614_Status</a> set_mlx90614_device_slave_address </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>slave_address</em></td><td>)</td>
+          <td class="paramname"><em>new_slave_address</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets a new Slave Address value in the corresponding MLX90614 EEPROM Address and also configured that Slave Address value in the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> . </p>
-<p>This function will first validate that the given slave address value is valid for a MLX90614 device. Then, the Slave Address in the MLX90614 EEPROM will be erased and subsequently written with the new/given slave address, followed by a delay of <a class="el" href="../../dc/d5e/group__mlx90614.html#ga01c66ad2c6e36a3e874c656ad66fc4d9">MLX90614_ERASE_OR_WRITE_CELL_TIME</a> after each of the erasing and writing processes. After that, a Read Request will be made to the MLX90614 Device in order to validate that the new slave address was correctly written into its EEPROM. Next, the slave address in the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> will be updated with the new one. Finally, the MLX90614 device is expected to be Power-Cycled (i.e., Software Reset is not going to be enough; make sure to electrically power-Off the MLX90614 Device and then to electrically power it On again).</p>
-<dl class="section note"><dt>Note</dt><dd><em><b style="color:red;"><u>WARNING 1</u>:</b><b>The author of <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> made sure that this function applies <a class="anchor" id="IwZXh0bgNhZW0CMTAAAR201BxXMK0Zf8QaL2r8vzwVFsQCKXd4v_XcA3elM7qyCQ_S7QM_SOqympc_aem_GqwHbzcMEAGRhF8-MJe3OA"></a> the 4-step method to change the slave address of a MLX90614 device as described by mynos at a Mikroe Forum. After some research of the author of this Driver Library ,</b> <b style="color:orange;">it was determined that this method has apparently worked for several individuals, but it did not work for the author of this Driver Library</b><b>. Instead, what happened to this author was that he was able to read the EEPROM address, where its stored value seems to correspond to the actual MLX90614 Slave Address, but where it was not possible to rewrite that value.</b> <b style="color:orange;"> However, it was decided to leave this function as it is in hopes that it may be useful for others by giving the benefit of the doubt that <u>perhaps some particular MLX90614 models can be written at the required EEPROM</u> address, while others may not</b><b>.</b></em></dd>
+<p>Sets a new Slave Address value in the corresponding MLX90614 EEPROM Address and also configures that Slave Address value in the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> .<br  />
+ <em><b style="color:red;"><u>WARNING 1</u>:</b><b> Do not have the MLX90614 Device wired to your MCU/MPU whenever you flash code into it and where you simultaneously have made use of this function. If you neglect this indication, then your MLX90614 may have its EEPROM corrupted and will stop working if that happens.</b></em> </p>
+<p>This function will first validate that the given slave address value is valid for a MLX90614 device. Then, the Slave Address in the MLX90614 EEPROM will be erased and subsequently written with the new/given slave address, followed by a delay of <a class="el" href="../../dc/d5e/group__mlx90614.html#ga01c66ad2c6e36a3e874c656ad66fc4d9">MLX90614_ERASE_OR_WRITE_CELL_TIME</a> after each of the erasing and writing processes. After that, the slave address in the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> will be updated with the new one. However, updating that value is probably not worth doing since after that, it is strictly required to Power-Cycle the MLX90614 (i.e., Software Reset is not going to be enough; make sure to electrically power-Off the MLX90614 Device and then to electrically power it On again), where because of this electrical reset, it is also required to software reset the MCU so that the I2C communication peripheral is also reconfigured from scratch since the MCU releases it after disconnecting the MLX90614 from it due to the Power-Cycle process previously mentioned.</p>
+<dl class="section note"><dt>Note</dt><dd>The author of <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> made sure that this function applies the official Melexis procedure for changing the Slave Address in the EEPROM of an MLX90614 Device. Although the steps and information required for that process is not in the MLX90614 datasheet, the author of <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> got the required information from the Melexis team via email, where they redirected the author of <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> to a <a href="https://github.com/melexis/i2c-stick/blob/main/i2c-stick-arduino/mlx90614_cmd.cpp#L456-L512">code provided by Melexis for identifying the steps for changing the Slave Address of a MLX90614 EEPROM</a>.</dd>
 <dd>
 <em><b style="color:red;"><u>WARNING 2</u>:</b><b>It is the responsibility of the implementer to Power-Cycle the MLX90614 device right after this function ends and before using another function from the <a class="el" href="../../dc/d5e/group__mlx90614.html">MLX90614 Infra Red Thermometer Driver module</a> .</b></em></dd>
 <dd>
-<em><b style="color:red;"><u>WARNING 3</u>:</b><b>It is the responsibility of the implementer to make sure to only connect/wire the MLX90614 device or devices to the assigned I2C Peripheral of this Driver Library (via the <a class="el" href="../../dc/d5e/group__mlx90614.html#ga77e2e00aef141b2543f481cb5ad9b1dd">init_mlx90614_module</a> function) that want to have their Slave Addresses changed, since this function will most probably change the Slave Addresses in the EEPROM of all the MLX90614 devices that are currently simultaneously connected this that I2C Peripheral. Therefore, it is highly suggested to have only one MLX90614 Device connected at a time whenever it is intended to use this function.</b></em></dd></dl>
+<em><b style="color:red;"><u>WARNING 3</u>:</b><b>It is the responsibility of the implementer to make sure to only connect/wire the MLX90614 device or devices to the assigned I2C Peripheral of this Driver Library (via the <a class="el" href="../../dc/d5e/group__mlx90614.html#ga77e2e00aef141b2543f481cb5ad9b1dd">init_mlx90614_module</a> function) that want to have their Slave Addresses changed, since this function may change the Slave Addresses in the EEPROM of all the MLX90614 devices that are currently simultaneously connected this that I2C Peripheral. Therefore, it is highly suggested to have only one MLX90614 Device connected at a time whenever it is intended to use this function.</b></em></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">slave_address</td><td>New slave address value that wants to be assigned and stored in the EEPROM of to the MLX90614 Infra Red Thermometer. The following are the possible values of this param:<br  />
+    <tr><td class="paramname">new_slave_address</td><td>New slave address value that wants to be assigned and stored in the EEPROM of to the MLX90614 Infra Red Thermometer. The following are the possible values of this param:<br  />
 <br  />
 <ul>
-<li>\(1_{d}\) up to \(127_{d}\) = Valid slave address.<br  />
+<li>\(3_{d}\) up to \(126_{d}\) = Valid slave address.<br  />
 </li>
-<li>\(0\) and any value greater than \(127_{d}\) = Invalid slave address values.</li>
+<li>\(0\), \(1\), \(2\) and any value greater than \(126_{d}\) = Invalid slave address values.</li>
 </ul>
 </td></tr>
   </table>
@@ -986,9 +1070,7 @@ If anything else went wrong.  </li>
     <tr><td class="paramname">MLX90614_EC_NR</td><td>If there was no MLX90614 device ready for an I2C communication. </td></tr>
     <tr><td class="paramname">MLX90614_EC_ERR</td><td><ul>
 <li>
-If the <code>slave_address</code> param contains an invalid slave address value.  </li>
-<li>
-If, after requesting to write the <code>slave_address</code> param into the MLX90614 EEPROM, the MLX90614 Device responded back with a Slave Address that did not match with the one given via the <code>slave_address</code> param.  </li>
+If the <code>slave_address</code> param contains an invalid slave address value. A valid slave address should be within the range of <a class="el" href="../../dc/d5e/group__mlx90614.html#ga36d9ae5462da5b629df5d6500270d284">MLX90614_MIN_VALID_SLAVE_ADDRESS_VALUE</a> up to <a class="el" href="../../dc/d5e/group__mlx90614.html#gafe72d16b50437264e7b0df960854b467">MLX90614_MAX_VALID_SLAVE_ADDRESS_VALUE</a> .  </li>
 <li>
 If anything else went wrong.  </li>
 </ul>
@@ -997,11 +1079,10 @@ If anything else went wrong.  </li>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>César Miranda Meza (<a href="#" onclick="location.href='mai'+'lto:'+'cmi'+'ra'+'nda'+'me'+'za3'+'@h'+'otm'+'ai'+'l.c'+'om'; return false;">cmira<span class="obfuscator">.nosp@m.</span>ndam<span class="obfuscator">.nosp@m.</span>eza3@<span class="obfuscator">.nosp@m.</span>hotm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>June 23, 2024. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>October 29, 2024. </dd></dl>
 <p><b>Local int8_t variable ret:</b> Return value of either a HAL function or a <a class="el" href="../../dc/d5e/group__mlx90614.html#ga612d2cf9c00ca6131bc1237c7bf1c81d">MLX90614_Status</a> function type.</p>
-<p><b>Local uint8_t constant 2 bytes array SLAVE_ADDR_ERASE_VALUE:</b> Holds the values that are used to erase the Slave Address in the MLX90614 EEPROM.</p>
-<p><b>Local uint8_t constant 2 bytes array send_i2c:</b> Holds the New Slave Address that wants to be written into the MLX90614 EEPROM (supposedly the MSB has to be zero according to <a class="anchor" id="IwZXh0bgNhZW0CMTAAAR201BxXMK0Zf8QaL2r8vzwVFsQCKXd4v_XcA3elM7qyCQ_S7QM_SOqympc_aem_GqwHbzcMEAGRhF8-MJe3OA"></a>the 4-step method of mynos).</p>
-<p><b>Local uint8_t variable i2cdata:</b> Used to hold the Slave Address given back by the MLX90614 Device after requesting it to read its EEPROM value right after having changed it, for validation purposes.</p>
+<p><b>Local uint8_t variable received_i2cdata:</b> Used to hold 2-bytes of data read from the EEPROM of the MLX90614 Device, received via the I2C Communication Protocol.</p>
+<p><b>Local uint8_t 3 bytes array variable new_mlx90614_eeprom_value:</b> Holds the data that wants to be written into the MLX90614 Device's EEPROM, where the first or least significant byte should stand for the MLX90614's EEPROM value where it is desired to start writing data, the next 2 bytes should contain the actual data that wants to be written into the MLX90614's EEPROM, and the last or most significant byte should stand for the PEC byte of the previously described values as calculated for the MLX90614 device.</p>
 
 </div>
 </div>
@@ -1029,9 +1110,9 @@ If anything else went wrong.  </li>
     <tr><td class="paramname">slave_address</td><td>Slave address value that must match the one that has been designated to the MLX90614 Infra Red Thermometer. The following are the possible values of this param:<br  />
 <br  />
 <ul>
-<li>\(1_{d}\) up to \(127_{d}\) = Valid slave address.<br  />
+<li>\(3_{d}\) up to \(126_{d}\) = Valid slave address.<br  />
 </li>
-<li>\(0\) and any value greater than \(127_{d}\) = Invalid slave address values.</li>
+<li>\(0\), \(1\), \(2\) and any value greater than \(126_{d}\) = Invalid slave address values.</li>
 </ul>
 </td></tr>
   </table>
@@ -1052,7 +1133,9 @@ If anything else went wrong.  </li>
   </dd>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>César Miranda Meza (<a href="#" onclick="location.href='mai'+'lto:'+'cmi'+'ra'+'nda'+'me'+'za3'+'@h'+'otm'+'ai'+'l.c'+'om'; return false;">cmira<span class="obfuscator">.nosp@m.</span>ndam<span class="obfuscator">.nosp@m.</span>eza3@<span class="obfuscator">.nosp@m.</span>hotm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>June 19, 2024. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>June 19, 2024. </dd>
+<dd>
+LAST UPDATE: October 30, 2024. </dd></dl>
 <p><b>Local uint8_t variable tmp_slave_addr_one_bit_left_shifted:</b> Contains the given slave address, but with one bit left shift.</p>
 
 </div>

@@ -463,7 +463,10 @@ uint8_t get_mlx90614_module_slave_address(void);
 MLX90614_Status set_mlx90614_module_slave_address(uint8_t slave_address);
 
 /**@brief	Sets a new Slave Address value in the corresponding MLX90614 EEPROM Address and also configures that Slave
- *          Address value in the @ref mlx90614 .
+ *          Address value in the @ref mlx90614 .<br>
+ *          <i><b style="color:red;"><u>WARNING 1</u>:</b><b> Do not have the MLX90614 Device wired to your MCU/MPU
+ *          whenever you flash code into it and where you simultaneously have made use of this function. If you neglect
+ *          this indication, then your MLX90614 may have its EEPROM corrupted and will stop working if that happens.</b></i>
  *
  * @details This function will first validate that the given slave address value is valid for a MLX90614 device. Then,
  *          the Slave Address in the MLX90614 EEPROM will be erased and subsequently written with the new/given slave
@@ -482,20 +485,16 @@ MLX90614_Status set_mlx90614_module_slave_address(uint8_t slave_address);
  *          Melexis team via email, where they redirected the author of @ref mlx90614 to a
  *          <a href=https://github.com/melexis/i2c-stick/blob/main/i2c-stick-arduino/mlx90614_cmd.cpp#L456-L512>code provided by Melexis for identifying the steps for changing the Slave Address of a MLX90614 EEPROM</a>.
  *
- * @note    <i><b style="color:red;"><u>WARNING 1</u>:</b><b>It is the responsibility of the implementer to Power-Cycle
+ * @note    <i><b style="color:red;"><u>WARNING 2</u>:</b><b>It is the responsibility of the implementer to Power-Cycle
  *          the MLX90614 device right after this function ends and before using another function from the @ref mlx90614
  *          .</b></i>
  *
- * @note    <i><b style="color:red;"><u>WARNING 2</u>:</b><b>It is the responsibility of the implementer to make sure to
+ * @note    <i><b style="color:red;"><u>WARNING 3</u>:</b><b>It is the responsibility of the implementer to make sure to
  *          only connect/wire the MLX90614 device or devices to the assigned I2C Peripheral of this Driver Library (via
  *          the @ref init_mlx90614_module function) that want to have their Slave Addresses changed, since this function
  *          may change the Slave Addresses in the EEPROM of all the MLX90614 devices that are currently simultaneously
  *          connected this that I2C Peripheral. Therefore, it is highly suggested to have only one MLX90614 Device
  *          connected at a time whenever it is intended to use this function.</b></i>
- *
- * @note    <i><b style="color:red;"><u>WARNING 3</u>:</b><b>Do not have the MLX90614 Device wired to your MCU/MPU
- *          whenever you flash code into it and where you simultaneously have made use of this function. If you neglect
- *          this indication, then your MLX90614 may have its EEPROM corrupted and will stop working if that happens.</b></i>
  *
  * @param new_slave_address New slave address value that wants to be assigned and stored in the EEPROM of to the
  *                          MLX90614 Infra Red Thermometer. The following are the possible values of this param:<br><br>
