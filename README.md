@@ -6,13 +6,9 @@ This library provides the definitions, variables and functions necessary so that
 with a MLX90614 Infra Red Thermometer Device from a microcontroller/microprocessor of the STMicroelectronics device
 family and, in particular, via the STM32CubeIDE app. Know that this Driver Library is very complete for professional
 projects where you require to use this sensor and that all the available functions and features of this Driver Library
-has been successfully validated. However, only one function provided here, whose purpose is to change this device's
-slave address was not validated and, according to several sources over the internet, it seems that changing an MLX90614
-slave address with the method implemented in this Driver Library may work for some MLX90614 sensors but not for others.
-Nonetheless, if you do not need to change your MLX90614 device's slave address or if, in the worst case scenario, you
-can solve that part externally, you can have this Driver Library at you disposal to work in very professional and even
-educational projects by using the I2C Protocol. For more details about this and to learn how to use this library, feel
-free to read the
+have been successfully validated. Therefore, you may have this Driver Library at you disposal to work in very
+professional and even educational projects by using the I2C Protocol. For more details about this and to learn how to
+use this library, feel free to read the
 <a href=https://github.com/Mortrack/MLX90614_STM_driver/tree/main/documentation>documentation of this project</a>.
 
 # How to explore the project files.
